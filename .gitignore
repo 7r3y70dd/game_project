@@ -1,0 +1,43 @@
+# Unreal Engine generated files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+
+# Plugin build output
+Plugins/**/Binaries/
+Plugins/**/Intermediate/
+
+# IDE files
+.vs/
+.idea/
+.vscode/
+*.sln
+*.VC.db
+*.VC.opendb
+
+# Cognimoss and coding-agent temporary data
+.cognimoss/cache/
+.cognimoss/logs/
+.cognimoss/tmp/
+.cognimoss/work/
+.agent-work/
+.agent-cache/
+agent-events.jsonl
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+.venv/
+
+# Temporary files
+*.log
+*.tmp
+*.bak
+*.orig
+*.rej
+
+# Operating-system files
+.DS_Store
+Thumbs.db
