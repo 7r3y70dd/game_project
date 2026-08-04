@@ -1,0 +1,6 @@
+#!/var/lib/agent-runner/work/7r3y70dd_game_project/issue-3-5f1492b1/.venv/bin/python
+import sys
+from _pytest.config import _console_main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(_console_main())
