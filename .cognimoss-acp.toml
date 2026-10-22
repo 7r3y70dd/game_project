@@ -1,10 +1,3 @@
 [cognimoss]
 dataset = "game_repo"
-
-# Default model
-model = "gpt-oss:20b"
-
-# Available models in Zed
-models = [
-  "gpt-oss:20b"
-]
+repo = "7r3y70dd/game_project"
