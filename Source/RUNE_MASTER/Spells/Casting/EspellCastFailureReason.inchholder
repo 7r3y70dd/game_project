@@ -1,0 +1,16 @@
+
+
+#pragma once
+
+
+// GENERATED FROM ESpellCastFailureReason definition - Do not edit manually!
+#include "ESpellCastFailureReason.h" // TYPED DEFINE(Espellcastfailurereason)
+
+
+
+#endif
+
+
+#if 0
+namespace SpellCasting::EnumNames { constexpr const char* NONE="None"; }
+// string constants for Blueprint UI systems and validation helpers
