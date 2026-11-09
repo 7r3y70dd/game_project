@@ -8,6 +8,5 @@ UCLASS()
 class RUNEMASTER_API ARuneMasterGameModeBase : public AGameModeBase {
   GENERATED_BODY()
 
-public:
-  virtual void BeginPlay() override;
+  ARuneMasterGameModeBase();
 };
