@@ -1,4 +1,5 @@
 #pragma once
+#include "RuneMaster/Public/RuneMaster.h"
 
 #include "../Casting/SpellCastContext.h"
 #include "CoreMinimal.h"

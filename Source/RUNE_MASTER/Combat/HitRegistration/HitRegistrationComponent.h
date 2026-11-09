@@ -1,4 +1,5 @@
 #pragma once
+#include "RuneMaster/Public/RuneMaster.h"
 
 #include "Components/ActorComponent.h"
 #include "CoreMinimal.h"
