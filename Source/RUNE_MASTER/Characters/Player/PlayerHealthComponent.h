@@ -1,15 +1,17 @@
 #pragma once
 #include "Components/ActorComponent.h"
-#include "CoreMinimal.h"
+#include "Interfaces/IHealth.h"
 #include "PlayerHealthComponent.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnHealthChanged, float, NewHealth);
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
-class RUNE_MASTER_API UPlayerHealthComponent : public UActorComponent {
+class RUNE_MASTER_API UPlayerHealthComponent : public UActorComponent,
+                                               public IHealth {
   GENERATED_BODY()
 public:
   UPlayerHealthComponent();
+  // IHealth interface methods
 
 protected:
   virtual void BeginPlay() override;
@@ -27,6 +29,8 @@ public:
   UPROPERTY(BlueprintAssignable, Category = "Events")
   FOnHealthChanged OnHealthChanged;
 
-  /** Apply damage to the actor. */
-  void TakeDamage(float Damage);
+  virtual float GetMaxHealth() const override;
+  virtual float GetCurrentHealth() const override;
+  virtual void ApplyDamage(float Damage) override;
+  virtual void Heal(float Amount) override;
 };

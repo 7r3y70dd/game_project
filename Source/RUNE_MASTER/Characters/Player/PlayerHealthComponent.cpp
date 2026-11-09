@@ -9,9 +9,15 @@ void UPlayerHealthComponent::BeginPlay() {
   CurrentHealth = MaxHealth;
 }
 
-void UPlayerHealthComponent::TakeDamage(float Damage) {
-  if (Damage <= 0.f || !IsValid(this))
+float UPlayerHealthComponent::GetMaxHealth() const { return MaxHealth; }
+
+float UPlayerHealthComponent::GetCurrentHealth() const { return CurrentHealth; }
+
+void UPlayerHealthComponent::ApplyDamage(float Damage) { TakeDamage(Damage); }
+
+void UPlayerHealthComponent::Heal(float Amount) {
+  if (Amount <= 0.f || !IsValid(this))
     return;
-  CurrentHealth = FMath::Clamp(CurrentHealth - Damage, 0.f, MaxHealth);
+  CurrentHealth = FMath::Clamp(CurrentHealth + Amount, 0.f, MaxHealth);
   OnHealthChanged.Broadcast(CurrentHealth);
 }
