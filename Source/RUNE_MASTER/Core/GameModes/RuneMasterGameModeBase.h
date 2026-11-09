@@ -9,5 +9,6 @@ UCLASS()
 class RUNE_MASTER_API ARuneMasterGameModeBase : public AGameModeBase {
   GENERATED_BODY()
 
+public:
   ARuneMasterGameModeBase();
 };
