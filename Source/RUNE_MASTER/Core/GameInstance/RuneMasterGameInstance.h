@@ -5,7 +5,7 @@
 #include "RuneMasterGameInstance.generated.h"
 
 UCLASS()
-class RUNEMASTER_API URuneMasterGameInstance : public UGameInstance {
+class RUNE_MASTER_API URuneMasterGameInstance : public UGameInstance {
   GENERATED_BODY()
 
 public:

@@ -5,7 +5,7 @@
 #include "RuneMasterPlayerController.generated.h"
 
 UCLASS()
-class RUNEMASTER_API ARuneMasterPlayerController : public APlayerController {
+class RUNE_MASTER_API ARuneMasterPlayerController : public APlayerController {
   GENERATED_BODY()
 
 public:

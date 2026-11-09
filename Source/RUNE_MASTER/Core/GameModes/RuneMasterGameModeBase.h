@@ -5,7 +5,7 @@
 #include "RuneMasterGameModeBase.generated.h"
 
 UCLASS()
-class RUNEMASTER_API ARuneMasterGameModeBase : public AGameModeBase {
+class RUNE_MASTER_API ARuneMasterGameModeBase : public AGameModeBase {
   GENERATED_BODY()
 
   ARuneMasterGameModeBase();

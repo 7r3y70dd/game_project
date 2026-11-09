@@ -5,7 +5,7 @@
 #include "HitRegistrationComponent.generated.h"
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
-class RUNEMASTER_API UHitRegistrationComponent : public UActorComponent {
+class RUNE_MASTER_API UHitRegistrationComponent : public UActorComponent {
   GENERATED_BODY()
 public:
   virtual void BeginPlay() override;

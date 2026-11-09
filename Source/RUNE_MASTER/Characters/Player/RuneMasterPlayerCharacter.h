@@ -6,7 +6,7 @@
 #include "SpellCastingComponent.h"
 
 UCLASS()
-class RUNEMASTER_API ARuneMasterPlayerCharacter : public ACharacter {
+class RUNE_MASTER_API ARuneMasterPlayerCharacter : public ACharacter {
   GENERATED_BODY()
 
 public:

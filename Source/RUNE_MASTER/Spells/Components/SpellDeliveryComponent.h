@@ -8,7 +8,7 @@
 #include "SpellDeliveryComponent.generated.h"
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
-class RUNE_MATER_API USpellDeliveryComponent : public UActorComponent {
+class RUNE_MASTER_API USpellDeliveryComponent : public UActorComponent {
   GENERATED_BODY()
 public:
   virtual void BeginPlay() override;

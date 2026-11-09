@@ -12,7 +12,7 @@ enum class ESpellDeliveryType : uint8 {
 };
 
 UCLASS(BlueprintType)
-class RUNE_MATER_API USpellDefinition : public UPrimaryDataAsset {
+class RUNE_MASTER_API USpellDefinition : public UPrimaryDataAsset {
   GENERATED_BODY()
 
 public:

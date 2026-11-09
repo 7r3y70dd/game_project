@@ -1,4 +1,5 @@
 #pragma once
+#include "RuneMaster/Public/RuneMaster.h"
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
@@ -10,7 +11,7 @@
  * Minimal context sent to the server when a spell is cast.
  */
 USTRUCT(BlueprintType)
-struct RUNE_MATER_API FSpellCastContext {
+struct RUNE_MASTER_API FSpellCastContext {
   GENERATED_BODY()
 
   /** The actor that initiated the cast. */

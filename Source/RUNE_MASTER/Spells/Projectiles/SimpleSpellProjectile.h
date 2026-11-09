@@ -5,7 +5,7 @@
 #include "SimpleSpellProjectile.generated.h"
 
 UCLASS()
-class RUNE_MATER_API ASimpleSpellProjectile : public AActor {
+class RUNE_MASTER_API ASimpleSpellProjectile : public AActor {
   GENERATED_BODY()
 public:
   ASimpleSpellProjectile();

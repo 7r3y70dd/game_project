@@ -6,7 +6,7 @@
 #include "CoreMinimal.h"
 
 UCLASS(ClassGroup = (Custom), meta = (BlueprintSpawnableComponent))
-class RUNE_MATER_API USpellCastingComponent : public UActorComponent {
+class RUNE_MASTER_API USpellCastingComponent : public UActorComponent {
   GENERATED_BODY()
 
 public:

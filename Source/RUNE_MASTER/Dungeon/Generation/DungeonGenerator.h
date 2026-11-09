@@ -6,7 +6,7 @@
 
 /** Simple room data structure for demo purposes */
 USTRUCT(BlueprintType)
-struct RUNEMASTER_API FDungeonRoom {
+struct RUNE_MASTER_API FDungeonRoom {
   GENERATED_BODY()
 
   UPROPERTY(EditAnywhere, BlueprintReadOnly)
@@ -21,7 +21,7 @@ struct RUNEMASTER_API FDungeonRoom {
  * GenerateFromSeed returns an array of room data. Implementation is a stub.
  */
 UCLASS()
-class RUNEMASTER_API UDungeonGenerator : public UObject {
+class RUNE_MASTER_API UDungeonGenerator : public UObject {
   GENERATED_BODY()
 public:
   /**
