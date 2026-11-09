@@ -1,13 +1,19 @@
-// Copyright Epic Games, Inc. All Rights Reserved.
 {
-  "BuildVersion": "",
-	"EngineVersionRangeStartMajor": 5,
-	"EngineVersionRangeEndMajor": null,
-	"GameType": "/Script/ThirdPersonGame.ThirdPersonGame",
-	"AdditionalFilters": [],
-	"PackagesToStage": ["/Script/RuneMaster"],
-	"CookPackagesForStagingModeOnBuildOnly": false,
-  "ModulesConfiguredByUProjectVersionMajor": "",
-	"BakeExtraDebugDataFromPacksIntoSourceMaps": true,
-   "TargetPlatforms" : ["Windows", "Mac"]
+  "FileVersion": 3,
+  "EngineAssociation": "5.4",
+  "Category": "",
+  "Description": "",
+  "Modules": [
+    {
+      "Name": "RuneMaster",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "RuneMasterCore",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ],
+  "TargetPlatforms": ["Windows", "Mac", "Linux"]
 }
