@@ -3,8 +3,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
-#include "RuneMasterPlayerCharacter.generated.h"
-#include "SpellCastingComponent.h"
+#include "PlayerHealthComponent.h"
+#include "Spells/Components/SpellCastingComponent.h"
 
 UCLASS()
 class RUNE_MASTER_API ARuneMasterPlayerCharacter : public ACharacter {
@@ -20,6 +20,10 @@ protected:
       class UInputComponent *PlayerInputComponent) override;
 
 private:
+  /** Health component attached to the player. */
+  UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components",
+            meta = (AllowPrivateAccess = true))
+  UPlayerHealthComponent *HealthComp;
   /** Spell casting component attached to the player. */
   UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components",
             meta = (AllowPrivateAccess = true))

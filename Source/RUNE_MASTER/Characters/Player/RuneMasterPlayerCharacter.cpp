@@ -1,8 +1,9 @@
 #include "RuneMasterPlayerCharacter.h"
-#include "GameFramework/Controller.h"
+// #include "PlayerHealthComponent.h"
 
 ARuneMasterPlayerCharacter::ARuneMasterPlayerCharacter() {
   PrimaryActorTick.bCanEverTick = true;
+  HealthComp = CreateDefaultSubobject<UPlayerHealthComponent>(TEXT("Health"));
   SpellCastingComp =
       CreateDefaultSubobject<USpellCastingComponent>(TEXT("SpellCasting"));
 }
@@ -43,6 +44,6 @@ void ARuneMasterPlayerCharacter::MoveRight(float Value) {
 
 void ARuneMasterPlayerCharacter::OnCastSpell() {
   if (SpellCastingComp) {
-    SpellCastingComp->CastSpell();
+    SpellCastingComp->CastSpell(0);
   }
 }
